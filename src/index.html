@@ -1,0 +1,31 @@
+---
+layout: base.html
+permalink: "/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber }}/{% endif %}"
+pagination:
+  data: collections.posts
+  size: 10
+  alias: posts
+  reverse: true
+  
+---
+<div class="wrapper">
+    {% for post in posts %}
+        <article class="list-post">
+            <h2 class="u-step-6"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <time>{{ post.date | date: "%B %d, %Y" }}</time>
+        </article>
+    {% endfor %}
+
+    {% if pagination.href.previous or pagination.href.next %}
+        <div class="pagination">
+
+            {% if pagination.href.previous %}
+                <a href="{{ pagination.href.previous }}">Previous Page</a>
+            {% endif %}
+
+            {% if pagination.href.next %}
+                <a href="{{ pagination.href.next }}">Next Page</a>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>

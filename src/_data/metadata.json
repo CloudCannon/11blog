@@ -1,0 +1,11 @@
+{
+    "title": "My Blog about the web",
+    "subtitle": "I am writing about my experiences in web developement.",
+    "language": "en",
+    "url": "https://example.com/",
+    "author": {
+      "name": "Tim Berners-Lee",
+      "email": "tim@web.com",
+      "twitter": "@timberners_lee"
+    }
+}

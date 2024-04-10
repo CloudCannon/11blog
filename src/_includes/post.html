@@ -1,0 +1,10 @@
+---
+layout: base.html
+---
+<article class="wrapper">
+    <header class="post">
+        <h2>{{ title }}</h2>
+        <p><time>{{ date | date: "%B %d, %Y" }}</time></p>
+    </header>
+    {{ content }}
+</article>

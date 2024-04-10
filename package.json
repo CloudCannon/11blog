@@ -1,0 +1,18 @@
+{
+  "name": "11blog",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "3.0.0-alpha.5",
+    "@11ty/eleventy-plugin-rss": "^1.2.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-svg-contents": "^0.7.0",
+    "eleventy-plugin-youtube-embed": "^1.10.2"
+  }
+}

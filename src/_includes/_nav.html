@@ -1,0 +1,17 @@
+<div class="wrapper">
+	<header class="main">
+		<h1 class="u-step-4">11Blog</h1>
+		<nav>
+			<a href="/" {% if page.url == "/" or page.url contains "/page/" %}class="active" {% endif %}>Home</a>
+			<a href="/about/" {% if page.url == "/about/" %}class="active" {% endif %}>About</a>
+		</nav>
+		<div class="buttons right">
+			<a href="/feed.xml" class="button">
+				{{ "/src/_svgs/rss.svg" | svgContents }}
+			</a>
+			<button class="toggle-color-scheme">
+				{{ "/src/_svgs/dark-mode.svg" | svgContents }}
+			</button>
+		</div>
+	</header>
+</div>
